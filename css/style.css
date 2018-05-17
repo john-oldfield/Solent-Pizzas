@@ -1,0 +1,279 @@
+#wrapper
+{
+    width: 1000px;
+    margin: auto;
+    border-radius: 25px;
+    border: 2px solid black;
+    overflow: hidden;
+}
+
+/* Header */
+#header
+{
+    width: 1000px;
+    height: 250px;
+    margin: auto;
+    text-align: center;
+}
+
+/* Navigation */
+ul
+{
+    height: 50px;
+    width: 1000px;
+    margin: auto 0;
+    list-style: none;
+    list-style-type: none;
+    font-family: 'Amaranth', sans-serif;
+    font-weight: bold;
+    background-color: #ee2d27;
+    text-align: center; 
+}
+
+li
+{
+    margin-right: 8.7%;
+    display: inline;
+    font-size: 40px; 
+}
+
+li a
+{
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+li a:hover
+{
+    background-color: #ff4d4d;
+}
+
+/* Body */
+body
+{
+    height: auto;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+/* Content */
+#formContent
+{
+    height: 800px;
+    width: 1000px;
+    
+}
+
+/* Footer */
+#footer
+{
+    margin: auto;
+    padding: 1px;
+    background-color: #ee2d27;
+    color: white;
+    text-align: center;
+    font-size: x-small;
+    width: 100%;
+}
+
+/* Image Slider */
+#carousel
+{
+    padding: 5px;
+}
+#slideLeft
+{
+    float: left;
+    margin: -250px auto auto 80px;
+    cursor: pointer;
+}
+#slideRight
+{
+    float: right;
+    margin: -250px 80px auto auto;
+    cursor: pointer;
+}
+
+/* Contact Form */
+#contact
+{
+    width: 500px;
+    text-align: left;
+    margin: auto;
+    height: 500px;
+}
+
+#contactForm
+{
+    width: 500px;
+    margin: auto;
+}
+
+input[type="text"]
+{
+    width: 300px;
+    height: auto;
+    margin: auto;
+    float: right;
+}
+
+#contactMessage
+{
+    width: 300px;
+    float: right;
+
+}
+
+#submitComment
+{
+    text-align: center;
+    margin-left: 190px;
+}
+
+#nameTick
+{
+    display: none;
+    float: right;
+    height: auto;
+}
+
+#nameCross
+{
+    display: none;
+    float: right;
+    height: auto;
+}
+
+#emailTick
+{
+    display: none;
+    float: right;
+    height: auto;
+}
+
+#emailCross
+{
+    display: none;
+    float: right;
+    height: auto;
+}
+
+#phoneTick
+{
+    display: none;
+    float: right;
+    height: auto;
+}
+
+#phoneCross
+{
+    display: none;
+    float: right;
+    height: auto;
+}
+
+#messageTick
+{
+    display: none;
+    float: right;
+    height: auto;
+}
+
+#messageCross
+{
+    display: none;
+    float: right;
+    height: auto;
+}
+
+#methodTick
+{
+    display: none;
+    float: right;
+    height: auto;
+}
+
+#methodCross
+{
+    display: none;
+    float: right;
+    height: auto;
+}
+
+/* Order Form */
+#orderForm
+{
+    width: 500px;
+    margin-left: 20px;
+    text-align: left;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    float: left;
+}
+
+#orderForm p
+{
+    margin: auto;
+}
+
+legend
+{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+fieldset
+{
+    margin-top: 10px;
+}
+
+.price
+{
+    color: red;
+    float: right;
+}
+
+input[type='text']
+{
+    float: right;
+}
+
+textbox
+{
+    float: right;
+}
+
+#orderButtons
+{
+    text-align: center;
+}
+
+input[type="submit"],input[type="reset"]
+{
+    background-color: #ee2d27;
+    border: none;
+    color: white;
+    margin: 8px 5px;
+    padding: 10px 20px;
+    text-decoration: none;
+    cursor: pointer; 
+}
+
+#orderSummary
+{
+    float: right;
+    padding: 10px;
+    width: 300px;
+    border: dotted;
+    background: #FF7D7A;
+    margin: 20px 20px auto auto;
+}
+
+.error
+{
+    color: red;
+    text-align: center;
+}
+

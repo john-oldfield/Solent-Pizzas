@@ -1,0 +1,54 @@
+<!doctype html>
+
+<!-- 
+    John Oldfield
+    08/02/2016
+-->  
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="Index" content="Visit Solent Pizza for a tasty pizza delivery near you. Order online today for a piping hot pizza delivered straight to your door!">
+        <link rel="icon" href="img/favicon.jpg">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link href='https://fonts.googleapis.com/css?family=Amaranth:400,700|Roboto:400' rel='stylesheet' type='text/css'>
+        <script type="text/javascript" src="script/contact.js"></script>
+    </head>
+    <body onload="currDate(); validation();">
+        <div id="wrapper">
+            <div id="header">
+                <img id="headerImg" src="img/solentPizzaLogo.jpg" alt="Solent Pizza Logo">
+            </div><!-- End of Header -->
+            <div id="nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="order.html">Order</a></li>
+                </ul>    
+            </div><!-- End of Navigation-->
+            <div id="content">
+                <h1>Come visit our Southampton branch!</h1>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d748.0560305338869!2d-1.3970131!3d50.9024306!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4874714b2a7fbabb%3A0x9de7217563400e22!2sCook+St%2C+Southampton+SO14!5e0!3m2!1sen!2suk!4v1455706860357" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                <h2>Send us a message!</h2>
+                <div id="contact">
+                    <form id="contactForm" onchange="formValidation();">
+                        <p><span id="nameTick"> &#x2714;</span><span id="nameCross"> &#x2718;</span>Name: <input type="text" id="contactName" name="contactName"></p>
+                        
+                        <p><span id="emailTick"> &#x2714;</span><span id="emailCross"> &#x2718;</span>E-Mail: <input type="text" id="contactEmail" name="contactEmail"></p>
+                        
+                        <p><span id="phoneTick"> &#x2714;</span><span id="phoneCross"> &#x2718;</span>Phone No: <input type="text" id="contactNumber" name="contactNumber"></p>
+                        
+                        
+                        <p>Message:<span id="messageTick"> &#x2714;</span><span id="messageCross"> &#x2718;</span><textarea id="contactMessage" name="contactMessage"></textarea></p><br>
+                        
+                        <p><input type="submit" name="submit" value="Submit" id="submitComment"></p>
+                    </form>
+                </div>
+            </div><!-- End of Content -->
+            <div id="footer">            
+                <p id="date"></p>
+                <p>Product, pricing, and promotion may vary by location. </p>
+            </div><!-- End of Footer -->
+        </div><!-- End of Wrapper-->
+    </body>
+</html>

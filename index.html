@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<!-- 
+    John Oldfield
+    08/02/2016
+-->  
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="Index" content="Visit Solent Pizza for a tasty pizza delivery near you. Order online today for a piping hot pizza delivered straight to your door!">
+        <link rel="icon" href="img/favicon.jpg">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link href='https://fonts.googleapis.com/css?family=Amaranth:400,700|Roboto:400' rel='stylesheet' type='text/css'>
+        <script type="text/javascript" src="script/index.js"></script>
+    </head>
+    <body onload="currDate(); autoRun()">
+        <div id="wrapper">
+            <div id="header">
+                <img id="headerImg" src="img/solentPizzaLogo.jpg" alt="Solent Pizza Logo">
+            </div><!-- End of Header -->
+            <div id="nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="order.html">Order</a></li>
+                </ul>    
+            </div><!-- End of Navigation-->
+            <div id="content">
+                <p>Pizza is Love, Pizza is Life</p>
+                <div id="carousel">
+                    <img src="img/pizza1.jpg" id="slideshow"><br>
+                    <img src="img/slideLeft.png" onclick="changeImage(-1)" id="slideLeft">
+                    <img src="img/slideRight.png" onclick="changeImage(1)" id="slideRight">
+                </div><!-- End of Carousel -->
+            </div><!-- End of Content -->
+            <div id="footer">            
+                <p id="date"></p>
+                <p>Product, pricing, and promotion may vary by location. </p>
+            </div><!-- End of Footer -->
+        </div><!-- End of Wrapper-->
+    </body>
+</html>

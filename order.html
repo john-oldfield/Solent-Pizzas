@@ -1,0 +1,74 @@
+<!doctype html>
+
+<!-- 
+    John Oldfield
+    08/02/2016
+-->  
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="Index" content="Visit Solent Pizza for a tasty pizza delivery near you. Order online today for a piping hot pizza delivered straight to your door!">
+        <link rel="icon" href="img/favicon.jpg">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link href='https://fonts.googleapis.com/css?family=Amaranth:400,700|Roboto:400' rel='stylesheet' type='text/css'>
+        <script type="text/javascript" src="script/order.js"></script>
+    </head>
+    <body onload="currDate(); order(); validation();">
+        <div id="wrapper">
+            <div id="header">
+                <img id="headerImg" src="img/solentPizzaLogo.jpg" alt="Solent Pizza Logo">
+            </div><!-- End of Header -->
+            <div id="nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="order.html">Order</a></li>
+                </ul>    
+            </div><!-- End of Navigation-->
+            <div id="formContent">
+                <p>Pizza is Love, Pizza is Life</p>
+                <form id="orderForm">
+                    <fieldset>
+                        <legend>Pizza Size: *</legend>
+                        <input type="radio" name="size" data-price= "5.00" data-human-desc="Small Pizza" value="small">Small<span class="price"> £5.00</span><br>
+                        <input type="radio" name="size" data-price= "7.50" data-human-desc="Medium Pizza" value="medium">Medium<span class="price"> £7.50</span><br>
+                        <input type="radio" name="size" data-price= "10.00" data-human-desc="Large Pizza" value="large">Large<span class="price"> £10.00</span><br>
+                        <input type="radio" name="size" data-price= "12.50" data-human-desc="Extra Large Pizza" value="extraLarge">Extra Large<span class="price"> £12.50</span><br><br>
+                        <p class="error" id="errBase" style="display: none;">Select a size*</p>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Topping: *</legend>
+                        <input type="checkbox" name="topping" data-price="0.20" data-human-desc="Cheese" value="cheese">Cheese<span class="price"> £0.20</span><br>
+                        <input type="checkbox" name="topping" data-price="0.40" data-human-desc="Mushrooms" value="mushrooms">Mushrooms<span class="price"> £0.40</span><br>
+                        <input type="checkbox" name="topping" data-price="0.50" data-human-desc="Ham" value="ham">Ham<span class="price"> £0.50</span><br>
+                        <input type="checkbox" name="topping" data-price="0.60" data-human-desc="Anchovies" value="anchovies">Anchovies<span class="price"> £0.60</span><br>
+                        <p class="error" id="errTopping" style="display: none;">Select at least one topping*</p>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Extras:</legend>
+                        <input type="checkbox" name="extra" data-price="1.50" data-human-desc="Chips" value="chips">Chips<span class="price"> £1.50</span><br>
+                        <input type="checkbox" name="extra" data-price="2.00" data-human-desc="Garlic Bread" value="garlicBread">Garlic Bread<span class="price"> £2.00</span><br>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Delivery Information:</legend>
+                        <p>Name: <input type="text" name="name"></p><br>
+                        <p>Address Line 1: <input type="text" name="address"></p><br>
+                        <p>Postcode: <input type="text" name="postcode"></p><br>
+                    </fieldset>
+                    <p id="orderButtons"><input type="submit" name="submit" value="Submit"><input type="reset" name="submit" value="Reset"></p>
+                </form>
+                <div id="orderSummary">
+                    <p><b>Order Summary</b></p>
+                    <p><b>Items:</b></p><p id="items"></p>
+                    <p><b>Delivery:</b></p><p id="deliveryCost"></p>
+                    <p><b>Total Cost:</b></p><p id="totalCost"></p>
+                </div><!-- End of Order Summary -->
+            </div><!-- End of Content -->
+            <div id="footer">            
+                <p id="date"></p>
+                <p>Product, pricing, and promotion may vary by location. </p>
+            </div><!-- End of Footer -->
+        </div><!-- End of Wrapper-->
+    </body>
+</html>
